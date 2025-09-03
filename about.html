@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — Colorado Teens for Vaccines</title>
+
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+
+  <meta name="description" content="Colorado Teens for Vaccines — Colorado 501(c)(3) nonprofit. EIN 87-1704832.">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Colorado Teens for Vaccines logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section container split">
+  <div>
+    <h1>About Colorado Teens for Vaccines</h1>
+    <p><strong>Colorado Teens for Vaccines</strong> operates for charitable and educational purposes as a recognized <strong>501(c)(3)</strong> (EIN <strong>87-1704832</strong>).</p>
+    <p><em>Specific purpose:</em> to empower teens and families to make informed vaccination decisions through education, access to clinics, and peer‑led advocacy. We collaborate with schools, clinics, and youth groups statewide.</p>
+    <ul class="small">
+      <li>We do not provide medical advice; individuals should consult healthcare professionals.</li>
+      <li>No substantial part of our activities involves lobbying or political campaigning.</li>
+      <li>Assets are irrevocably dedicated to charitable and educational purposes; upon dissolution they pass to a 501(c)(3).</li>
+    </ul>
+  </div>
+  <figure class="figure"><img src="images/about.jpg" alt="Our mission and team"></figure>
+</main>
+
+<section class="section container grid-3">
+  <div class="card"><div class="card-body">
+    <strong>Programs</strong>
+    <p class="small">Education • Clinics • Peer Ambassadors</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Contact</strong>
+    <p class="small"><a href="mailto:contact@coloradoteensvaccines.online">contact@coloradoteensvaccines.online</a> • <a href="tel:+17854910978">+17854910978</a></p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Office</strong>
+    <p class="small">1334 S. Elizabeth St., Denver, CO 80210, United States</p>
+  </div></div>
+</section>
+
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Colorado Teens for Vaccines</div>
+      <div class="small">Colorado Nonprofit • 501(c)(3)</div>
+      <div class="small">EIN: 87-1704832</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>We empower teens and families to make informed vaccination decisions through education, access to clinics, and peer‑led advocacy.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>1334 S. Elizabeth St.<br>Denver, CO 80210<br>United States<br>
+        <strong>Email:</strong> <a href="mailto:contact@coloradoteensvaccines.online">contact@coloradoteensvaccines.online</a><br>
+        <strong>Phone:</strong> <a href="tel:+17854910978">+17854910978</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html]

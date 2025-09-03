@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Programs — Colorado Teens for Vaccines</title>
+
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+
+  <meta name="description" content="Colorado Teens for Vaccines programs — education, vaccine clinics, peer ambassadors.">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Colorado Teens for Vaccines logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section container">
+  <h1>Programs</h1>
+  <div class="grid-3">
+    <article class="card">
+      <img src="images/education.jpg" alt="Education">
+      <div class="card-body">
+        <h3>Education</h3>
+        <p>Evidence‑based workshops and resources for teens, parents, and educators.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/clinic.jpg" alt="Clinics">
+      <div class="card-body">
+        <h3>Vaccine Clinics</h3>
+        <p>Partner‑run pop‑ups offering recommended vaccines with simple consent workflows.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/peer.jpg" alt="Peer Ambassadors">
+      <div class="card-body">
+        <h3>Peer Ambassadors</h3>
+        <p>Leadership training, myth‑busting toolkits, and service hours for student advocates.</p>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Colorado Teens for Vaccines</div>
+      <div class="small">Colorado Nonprofit • 501(c)(3)</div>
+      <div class="small">EIN: 87-1704832</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>We empower teens and families to make informed vaccination decisions through education, access to clinics, and peer‑led advocacy.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>1334 S. Elizabeth St.<br>Denver, CO 80210<br>United States<br>
+        <strong>Email:</strong> <a href="mailto:contact@coloradoteensvaccines.online">contact@coloradoteensvaccines.online</a><br>
+        <strong>Phone:</strong> <a href="tel:+17854910978">+17854910978</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html]
